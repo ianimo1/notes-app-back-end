@@ -4,7 +4,7 @@ const notes = require("./notes");
 const addNoteHandler = (request, h) => {
   const { title, tags, body } = request.payload;
   const id = nanoid(16);
-  const createAt = new Date().toISOString;
+  const createAt = new Date().toISOString();
   const updateAt = createAt;
 
   const newNote = {
